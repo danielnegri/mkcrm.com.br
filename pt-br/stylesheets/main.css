@@ -1,0 +1,955 @@
+/*
+	Autor - Daniel Negri www.danielnegri.com.br
+*/
+
+/*
+============================================
+Reset
+============================================
+*/
+html, body, p, ul, ol, dl, li, h1, h2, h3, h4, img	{
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+img	{
+	border: 0;
+}
+
+a {
+	outline: none;
+}
+
+
+/*
+============================================
+Layout
+============================================
+*/
+body	{
+	background: url(/images/inner_repeated_bg.png) repeat-x center top;
+	background-color: #e1e1e1;
+}
+
+#wrapper	{
+	width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;	
+}
+
+
+#shadow	{
+	position: absolute;
+	width: 660px;
+	background: url(/images/page_shadow.png) repeat-y;
+	left: 0px;
+	top: 80px;
+}
+
+#page_header {
+	width: 660px;
+	height: 170px;
+	position: relative;
+}
+
+#page,
+.page_main {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#page_bottom, .page_bottom	{
+	width: 660px;
+	height: 30px;
+	background: url(/images/page_bottom.png) no-repeat;
+}
+
+#sidebar {
+	position: absolute;
+	left: 675px;
+	top: 90px;
+	width: 18em;
+	padding-top: 55px;
+}
+
+.clear {
+	display: block;
+	width: 100%;
+	height: 1px;
+	clear: both;
+	margin-top: -1px;
+}
+
+
+
+/*
+============================================
+Header
+============================================
+*/
+#header_container {
+	width: 100%;
+}
+
+#header {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+
+
+#header_nav ul {
+   float: right;
+   list-style: none outside none;
+   margin: 11px 22px 0;
+   padding: 0;			
+}
+
+#header_nav ul li {
+   border-right: 1px solid #999999;
+   display: inline;
+   font-size: 11px;
+   padding: 0 7px;
+	font-color: #FFFFFF;
+}
+
+#header_nav ul li.last {
+   border-right: 0 none;
+}
+
+#header_nav a {
+	color: #FFFFFF;
+}
+
+
+/* Logo */
+h1#logo {
+	float: left;
+	margin: -2px 0 3px;
+	border: none;
+}
+
+h1#logo a {
+	background: url(/images/logo.png) no-repeat left top;
+	display: block;
+	height: 43px;
+	text-indent: -999em;
+	width: 480px;
+}
+
+
+
+
+/* Sidebar
+============================================================ */ 
+
+.sidebox {
+	background: url(/images/sidebar_separator.png) no-repeat;
+	padding: 10px 0px 20px 10px;
+}
+
+.sidebox.blank {
+	background: none;
+	padding: 10px 0px 20px 0px;
+}
+
+ul.sidebar_actions li	{
+	height: 64px;
+	margin-bottom: 10px;
+}
+
+ul.sidebar_actions li#download	a	{
+	background: url(/images/button_download.png) no-repeat;
+}
+
+ul.sidebar_actions li#purchase	a	{
+	background: url(/images/button_purchase.png) no-repeat;
+}
+
+ul.sidebar_actions li span {
+	display: block;
+	padding-top: 13px;
+	padding-bottom: 5px;
+	font-size: 18px;
+}
+
+ul.sidebar_actions li a {
+	padding-left: 70px;
+	display: block;
+	height: 64px;
+}
+
+ul.sidebar_actions li#download	a:hover, ul.sidebar_actions li#purchase a:hover{
+	background-position: 0 -64px;
+}
+
+
+
+/* Footer
+============================================================ */ 
+
+#footer	{
+	background: url(/images/background_solid.png);
+	margin-top: 0;
+	text-align: center;
+	font-size: 10px;
+	padding-bottom: 25px;
+}
+
+#footer ul#footer_links li {
+	display: inline;
+	color: #777;
+}
+
+#footer ul#footer_links li a {
+	color: #777;
+	text-decoration: none;
+}
+
+#footer ul#footer_links li a:hover {
+	text-decoration: underline;
+}
+
+#footer ul#footer_links li#webmaster_link {
+	text-align: right;
+	padding-right: 0.5em;
+	border-right: 0.1em solid #777;
+}
+
+#footer ul#footer_links li#contact_link {
+	text-align: left;
+	padding-left: 0.5em;
+}
+
+#footer ul#footer_links li#language_link img {
+	margin-left: 10px;
+	position: relative;
+	top: 2px;
+}
+
+body#contact_page #footer ul#footer_links li#contact_link a:hover {
+	text-decoration: none;
+}
+
+
+
+/* Typography
+============================================================ */ 
+
+body {
+	font-family: 'Lucida Grande', Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #222;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #4d6399;
+}
+
+a:hover	{
+	text-decoration: underline;
+}
+
+a:active {
+	border: none;
+}
+
+h2	{
+	font-size: 15px;
+	font-weight: normal;
+	margin-top: 23px;
+	margin-bottom: 9px;
+}
+
+#sidebar {
+	font-size: 11px;
+	line-height: 16px;
+	color: #4a5153;
+}
+
+#sidebar a { 
+	/* color: #405669; */
+}
+
+#sidebar p {
+	line-height: 16px;
+	margin-bottom: 16px;
+}
+
+#sidebar h4	{
+	margin-top: 35px;
+	margin-bottom: 8px;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #181a1a;
+	/*color: #494f51;*/
+}
+
+pre, code {
+	font-family: Monaco, "Andale Mono" , "Lucida Console" , "Bitstream Vera Sans Mono" , "Courier New" , monospace;
+}
+
+
+
+/*
+============================================
+CRM
+============================================
+*/
+
+body.crm #page_header {
+	height: 223px;
+	position: relative;
+	background: url(/images/page_header.png) no-repeat;
+}
+	
+body.crm #page {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+body.crm div.topic {
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 640px;
+	background: url(/images/page_separator_short.png) no-repeat;
+	background-position: bottom;
+}
+	
+body.crm div.topic p {
+	margin-top: 0px;
+	margin-bottom: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #555;
+}
+
+body.crm div.topic p em {
+	font-style: normal;
+	font-size: 14px;
+	color: #333;
+}
+
+
+body.crm #page h2 {
+	font-size: 20px;
+	line-height: 24px;
+	margin-left: 60px;
+	margin-top: 40px;
+	color: #333;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+/* BUTTONS ====================================================================================== */
+
+.crm #buttons {
+	position: relative;
+	height: 120px;
+}
+.crm .button_download {
+	position: absolute;
+	top: 28px;
+	left: 50px;
+}
+.crm .button_purchase {
+	position: absolute;
+	top: 28px;
+	left: 300px;
+}
+
+.crm .button_download a,
+.crm .button_purchase a {
+	display: block;
+	width: 200px;
+	height: 64px;
+	padding-left: 70px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #555;
+}
+
+.crm .button_download a {
+	width: 150px;
+	background-image: url(/images/button2_download.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.crm .button_purchase a {
+	width: 110px;
+	background-image: url(/images/button2_purchase.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.crm .button_download a:hover,
+.crm .button_purchase a:hover {
+	background-position: 0px -64px;
+	text-decoration: none;
+}
+
+.crm .button_download a strong,
+.crm .button_purchase a strong {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	color: #222;
+	display: block;
+	padding-top: 3px;
+}
+
+
+
+.crm .button_macappstore {
+	position: absolute;
+	top: 34px;
+	left: 489px;
+}
+.crm .button_macappstore a {
+	display: block; 
+	width: 150px; height: 50px;
+	text-indent: -9999px;
+	background: url(/images/Button-MacAppStore.png) no-repeat;
+	background-position: 0px 0px;
+}
+.crm .button_macappstore a:hover {
+	background-position: 0px -100px;
+}
+
+
+
+/* INTRODUCTION ================================================================================= */
+
+body.crm #introduction {
+	/*background: transparent;*/
+}
+
+body.crm #introduction p {
+	padding: 50px 50px 50px 50px;
+	margin: 0px;
+	/*padding: 0px 65px;*/
+	color: #555;
+}
+
+
+/* SCREENCAST =================================================================================== */
+
+.crm .videothumbs {
+	margin-top: 50px;
+}
+.crm .videothumbs li {
+	display: block;
+	width: 140px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 11px;
+	line-height: 14px;
+	margin-bottom: 20px;
+}
+
+.crm .videothumbs li a {
+	padding-top: 80px;
+	display: block;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.crm #videothumb-crmscreencast {
+	background-image: url(/images/videothumb-crmscreencast.jpg);
+}
+
+.crm #videothumb-sco1 {
+	background-image: url(/images/videothumb-sco1.jpg);
+}
+
+
+/*
+.crm a#link_screencast span {
+	display: block;
+	text-align: center;
+	width: 140px;
+	padding-top: 80px;
+	font-size: 12px;
+}
+*/
+
+.crm a:hover#link_screencast {
+	/*background-position: 0px -80px;*/
+}
+
+
+
+
+/* SCREENSHOT =================================================================================== */
+
+body.crm #feature_screenshot	{
+	position: relative;
+	padding-bottom: 40px;
+}
+
+body.crm #feature_screenshot img {
+	margin-left: 20px;
+	margin-top: 8em;
+	z-index: 1000;
+}
+
+body.crm #feature_screenshot #bottom_wrapper	{
+	position: relative;
+	margin-top: -50px;
+	height: 22ex;
+}
+
+body.crm #feature_screenshot #big_picture_text	{
+	position: absolute;
+	top: 40px;
+	left: 65px;
+	width: 220px;
+	margin-top: 0;
+}
+
+body.crm #feature_screenshot #tag_bar_text	{
+	position: absolute;
+	top: 40px;
+	left: 340px;
+	width: 250px;
+	/*padding-right: 50px;*/
+	margin-top: 0;
+}
+
+body.crm #feature_screenshot #teamwork_text	{
+	position: absolute;
+	left: 70px;
+	width: 230px;
+	top: 0;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+body.crm #feature_screenshot #no_columns_text	{
+	position: absolute;
+	left: 350px;
+	margin-top: 30px;
+	margin-bottom: 0;
+	width: 225px;
+	/*padding-right: 65px;*/
+	text-align: right;
+}
+
+
+
+
+
+/* FEATURES ===================================================================================== */
+
+
+body.crm h3 {
+	font-size: 16px;
+	line-height: 18px;
+	color: #222;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+body.crm .description {
+	color: #555;
+}
+
+body.crm #feature_quickentryhud {
+	position: relative;
+}
+
+body.crm #feature_quickentryhud .description {
+	width: 210px;
+	padding-left: 50px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+body.crm #feature_quickentryhud img.theImage	{
+	position: absolute;
+	top: 48px;
+	left: 270px;
+	z-index: 100;
+}
+
+body.crm #feature_autofill {
+	position: relative;
+}
+
+body.crm #feature_autofill .description {
+	width: 230px;
+	padding-left: 370px;
+	padding-top: 0px;
+	padding-bottom: 40px;
+}
+
+body.crm #feature_autofill img.theImage {
+	position: absolute;
+	top: 0px;
+	left: 35px;
+	z-index: 100;
+}
+
+body.crm #feature_iphone {
+	position: relative;
+}
+
+body.crm #feature_iphone .description {
+	width: 250px;
+	padding-left: 50px;
+	padding-top: 0px;
+	padding-bottom: 30px;
+}
+
+body.crm #feature_iphone img.theImage {
+	position: absolute;
+	top: 20px;
+	left: 340px;
+	z-index: 100;
+}
+
+
+body.crm #feature_iphone .button_learnmore a {
+	display: block;
+	width: 100px;
+	height: 24px;
+	text-indent: -9999px;
+	background-image: url(/images/button2_white_learnmore.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+body.crm #feature_iphone .button_learnmore a:hover {
+	background-position: 0px -24px;
+}
+
+
+
+
+
+/* BULLET POINTS ================================================================================ */
+
+
+#feature_bulletpoints ul {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 200px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #555;
+}
+
+#feature_bulletpoints ul.left {
+	padding-left: 85px;
+	float: left;
+}
+
+#feature_bulletpoints ul.right {
+	padding-right: 60px;
+	float: right;
+}
+
+#feature_bulletpoints li {
+	position: relative;
+	padding-bottom: 18px;
+	line-height: 18px;
+}
+
+#feature_bulletpoints img {
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: -5px;
+	left: -40px;
+}
+
+#feature_bulletpoints strong {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	display: block;
+	color: #333;
+}
+
+#feature_bulletpoints em {
+	/*color: #333;*/
+	/*font-style: normal;
+	font-weight: bold;*/
+}
+
+#feature_bulletpoints .note {
+	color: #888;
+	font-size: 11px;
+}
+
+
+
+
+
+
+
+/* SUBSCRIBE ==================================================================================== */
+
+
+
+
+body.crm #crm_subscription {
+	background: none; /* overwrite .topic background */
+	margin-top: 30px;
+}
+
+body.crm #crm_subscription .description {
+	width: 220px;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	color: #555;
+}
+
+body.crm #crm_subscription .description ul {
+	width: 120px;
+	margin-top: 20px;
+	margin-left: 35px;
+	line-height: 15px;
+}
+
+body.crm #crm_subscription .description ul li {
+	margin-bottom: 10px;
+	height: 25px;
+	position: relative;
+}
+
+body.crm #crm_subscription .description ul a {
+	/*font-size: 16px;*/
+}
+
+body.crm #crm_subscription .description ul img {
+	display: block;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: -5px;
+	left: -35px;
+}
+
+
+
+
+
+
+body.crm #subscribe {
+	float: right;
+	width: 290px;
+	margin: 0px 50px 20px 0px;
+
+}
+
+body.crm #subscribe form {
+	background: url(/images/crm_subscriptionformbg_top.png) no-repeat;
+	margin: 0px;
+}
+
+body.crm #subscribe form .slidingdoor {
+	background: url(/images/crm_subscriptionformbg_bottom.png) no-repeat;
+	background-position: bottom;
+	padding: 20px 20px 10px 20px;
+	margin-bottom: 7px;	
+}
+
+body.crm #subscribe h4 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 16px;
+	color: #333;
+}
+
+body.crm #subscribe p {
+	margin: 10px 0px;
+	font-size: 12px;
+	color: #555;
+	line-height: 16px;
+}
+
+
+
+body.crm #subscribe #privacy	{
+	font-size: 9px;
+	color: #777;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-right: 15px;
+	line-height: 10px;
+}
+
+body.crm #subscribe form input#your_email {
+	vertical-align: 10px;
+	font-size: 14px;
+	width: 245px;
+}
+
+body.crm #subscribe form input#newsletter_button {
+	text-align: right;
+	margin-left: 152px;
+}
+
+
+
+
+
+
+
+
+/* BUG REPORT =================================================================================== */
+
+
+body#crm_bug_report #page_header {
+	position: relative;
+	background: url(/images/page_header_blank.png) no-repeat;
+	height: 80px;
+}
+	
+body#crm_bug_report #page_header h1 {
+	margin: 0;
+	padding-left: 40px;
+	padding-top: 28px;
+	font-size: 20px;
+	font-weight: normal;
+} 
+
+body#crm_bug_report p#submitted {
+	margin: 50px 30px 80px 40px;
+	font-size: 12px;
+} 
+
+form#crm_bug_report	{
+	margin-left: 40px;
+}
+
+form#crm_bug_report label	{
+	display: block;
+}
+
+
+
+
+/* SIDEBAR ====================================================================================== */
+
+body.crm #sidebar {
+	padding-top: 20px;
+}
+
+body.crm #sidebar p {
+	/*
+	font-size: 11px;
+	line-height: 15px;
+	color: #333;
+	*/
+}
+
+
+body.crm #sidebar #sidebar_iphone p {
+	margin-left: 12px;
+}
+
+body.crm #sidebar #sidebar_iphone a {
+	display: block;
+	width: 190px;
+	height: 180px;
+	text-indent: -9999px;
+	background: url(/images/crm_sidebar_iphone2.png) no-repeat;
+}
+
+
+/*
+body.crm #sidebar #price_tag {
+	width: 110px;
+	height: 70px;
+	position: absolute;
+	top: 200px;
+	left: -25px;
+	text-indent: -9999px;
+	background: url(/images/sidebar_crm_pricetag.png) no-repeat;
+	padding: 0px;
+}
+*/
+
+body.crm #sidebar .sideboxIcon {
+	float: left;
+	display: block;
+	margin-right: 10px;
+}
+
+body.crm #sidebar .sideboxItem {
+	clear: left;
+}
+
+body.crm #sidebar .sideboxDescription {
+	margin-left: 35px;
+}
+
+
+
+
+
+/* CRM WORLD ================================================================================= */
+
+ul#SidebarThingsWorldNavi	{
+	position: relative;
+	height: 75px;
+}
+
+ul#SidebarThingsWorldNavi li a	{
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 0;
+	text-indent: -9999px;
+}
+
+ul#SidebarThingsWorldNavi li#crm_blog_link a	{
+	top: 0;
+	width: 130px;
+	background-image: url(/images/crmworld_navigation_blog.png);
+}
+
+ul#SidebarThingsWorldNavi li#crm_wiki_link a	{
+	top: 35px;
+	width: 130px;
+	background-image: url(/images/crmworld_navigation_wiki.png);
+}
+
+ul#SidebarThingsWorldNavi li#crm_forum_link a	{
+	top: 70px;
+	width: 130px;
+	background-image: url(/images/crmworld_navigation_forum.png);
+}
+
+ul#SidebarThingsWorldNavi li a:hover	{
+	background-position: 0 -50px;
+}
+
+
